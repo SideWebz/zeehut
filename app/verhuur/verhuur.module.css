@@ -1,0 +1,151 @@
+.serviceCardWrapper {
+  --card-ratio: 391 / 320;
+  --badge-size: 20%;
+  --card-bg: #e1d8c9;
+  --card-title-color: #1a1a1a;
+  --card-desc-color: #444;
+  --badge-bg: #d4c9b5;
+  --badge-icon-color: #df540a;
+  position: relative;
+  width: 100%;
+  /* Keep the exact same card ratio on every device */
+  aspect-ratio: var(--card-ratio);
+}
+
+.serviceCardBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.serviceCardContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: calc(var(--badge-size) + 4%);
+  bottom: 0;
+  padding: clamp(14px, 4.2%, 28px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.serviceCardTitle {
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 300;
+  color: var(--card-title-color);
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.serviceCardDesc {
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  color: var(--card-desc-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.serviceCardBadge {
+  position: absolute;
+  width: var(--badge-size);
+  aspect-ratio: 1 / 1;
+  bottom: 0;
+  right: 0;
+}
+
+.serviceCardBadgeBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.serviceCardBadgeIcon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--badge-icon-color);
+}
+
+.serviceCardBadgeIcon svg {
+  width: clamp(20px, 40%, 36px);
+  height: clamp(20px, 40%, 36px);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(12px, 2vw, 24px);
+}
+
+/* Desktop: highlight cards 2 and 5 */
+.servicesGrid > :nth-child(2),
+.servicesGrid > :nth-child(5) {
+  --card-bg: #df540a;
+  --card-title-color: #fff;
+  --card-desc-color: #fff;
+  --badge-bg: #df540a;
+  --badge-icon-color: #fff;
+}
+
+@media (max-width: 992px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Tablet and below: keep cards 2 and 5 highlighted and move them first */
+  .servicesGrid > :nth-child(2) {
+    order: -2;
+  }
+
+  .servicesGrid > :nth-child(5) {
+    order: -1;
+  }
+
+  .serviceCardContent {
+    right: calc(var(--badge-size) + 4%);
+  }
+}
+
+@media (min-width: 992px) {
+  .serviceCardTitle {
+    font-size: 1.65rem;
+    font-weight: 300;
+  }
+
+  .serviceCardDesc {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .serviceCardWrapper {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .serviceCardContent {
+    right: calc(var(--badge-size) + 6%);
+    padding: 16px;
+  }
+
+  .serviceCardTitle {
+    font-size: clamp(1.2rem, 4.4vw, 1.45rem);
+    font-weight: 300;
+    line-height: 1.25;
+  }
+
+  .serviceCardDesc {
+    font-size: clamp(0.98rem, 3.2vw, 1.08rem);
+    line-height: 1.5;
+  }
+}

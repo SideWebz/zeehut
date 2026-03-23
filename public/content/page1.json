@@ -1,0 +1,34 @@
+{
+  "texts": [
+    {
+      "id": 1,
+      "content": "Wenst u een mooi onderhouden cabine met opvolging op het strand tijdens het seizoen, dan bent u op het juiste adres!"
+    },
+    {
+      "id": 2,
+      "content": "Wat is er allemaal inbegrepen bij het huren van een cabine? Ontdek het hier."
+    },
+    {
+      "id": 3,
+      "content": "Benieuwd naar onze strandcabines? Klik hier voor alle details en ontdek jouw ideale plekje op het strand."
+    },
+    {
+      "id": 4,
+      "content": "De Zeehut werd opgericht in 2008 door Michel Blanckaert. Het bedrijf staat het hele jaar door in voor het onderhouden, vernieuwen, stockeren en plaatsen van de strandcabines. Tijdens het seizoen worden de cabines ook opgevolgd op het strand en is er dagelijks contact mogelijk.  Met een persoonlijke aanpak, oog voor service en voortdurende innovatie zorgen we voor comfort, betrouwbaarheid en zorgeloos genieten aan zee."
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "hreff": "/dezeehut1.png"
+    },
+    {
+      "id": 2,
+      "hreff": "/dezeehut2.png"
+    },
+    {
+      "id": 3,
+      "hreff": "/dezeehut3.png"
+    }
+  ]
+}
