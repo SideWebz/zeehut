@@ -99,10 +99,10 @@ export default function Verhuur() {
         </div>
         <div className="d-flex gap-2 mt-2" style={{ height: 'clamp(120px, 20vw, 220px)' }}>
           <div className="position-relative overflow-hidden rounded-4" style={{ flex: 1 }}>
-            <Image src={dezeehut2} fill style={{ objectFit: 'cover' }} sizes="50vw" priority loading="eager" alt="Verhuur 1" />
+            <Image src="/dezeehut21.jpg" fill style={{ objectFit: 'cover' }} sizes="50vw" priority loading="eager" alt="Verhuur 1" />
           </div>
           <div className="position-relative overflow-hidden rounded-4" style={{ flex: 1 }}>
-            <Image src={dezeehut2} fill style={{ objectFit: 'cover' }} sizes="50vw" loading="eager" alt="Verhuur 2" />
+            <Image src="/dezeehut20.jpg" fill style={{ objectFit: 'cover' }} sizes="50vw" loading="eager" alt="Verhuur 2" />
           </div>
         </div>
       </section>

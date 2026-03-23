@@ -16,10 +16,10 @@ export default function StandplaatsPage() {
         </div>
         <div className="d-flex gap-2 mt-2" style={{ height: 'clamp(120px, 20vw, 220px)' }}>
           <div className="position-relative overflow-hidden rounded-4" style={{ flex: 1 }}>
-            <Image src={dezeehut2} fill style={{ objectFit: 'cover' }} sizes="50vw" priority loading="eager" alt="Standplaats 1" />
+            <Image src="/dezeehut20.jpg" fill style={{ objectFit: 'cover' }} sizes="50vw" priority loading="eager" alt="Standplaats 1" />
           </div>
           <div className="position-relative overflow-hidden rounded-4" style={{ flex: 1 }}>
-            <Image src={dezeehut2} fill style={{ objectFit: 'cover' }} sizes="50vw" loading="eager" alt="Standplaats 2" />
+            <Image src="/dezeehut21.jpg" fill style={{ objectFit: 'cover' }} sizes="50vw" loading="eager" alt="Standplaats 2" />
           </div>
         </div>
       </section>
@@ -35,13 +35,13 @@ export default function StandplaatsPage() {
           <div className="col-12 col-md">
             <div className="h-100 bg-prim rounded-4">
               <h2>Standplaatsen alle zones</h2>
-              <p>Voor alle zones 1 tem 6 kan u een standplaats huren bij het stad, inschrijven kan via <a href="https://www.oostende.be/strandcabines" target="_blank" rel="noopener noreferrer">www.oostende.be/strandcabines</a>. Dit kan jaarlijks vanaf 1 oktober tot en met 31 december. Eens u een plaats is toegekend kunt u zich tot ons wenden voor de huur van een strandcabine.</p>
+              <p>Voor alle zones 1 tem 6 kan u een standplaats huren bij het stad, inschrijven kan via <a className="standplaats-underlined-link" href="https://www.oostende.be/strandcabines" target="_blank" rel="noopener noreferrer">www.oostende.be/strandcabines</a>. Dit kan jaarlijks vanaf 1 oktober tot en met 31 december. Eens u een plaats is toegekend kunt u zich tot ons wenden voor de huur van een strandcabine.</p>
             </div>
           </div>
           <div className="col-12 col-md">
             <div className="h-100 bg-sec rounded-4">
               <h2>Standplaats in Mariakerke - zone 4</h2>
-              <p>Voor zone 4 in Mariakerke kunt u eveneens, indien er een plaats vrij komt, bij ons een standplaats huren. Stuur een mail naar <a href="mailto:michel@dezeehut.be">michel@dezeehut.be</a> met uw adres en telefoon en voorkeur van ligging.</p>
+              <p>Voor zone 4 in Mariakerke kunt u eveneens, indien er een plaats vrij komt, bij ons een standplaats huren. Stuur een mail naar <a className="standplaats-underlined-link" href="mailto:michel@dezeehut.be">michel@dezeehut.be</a> met uw adres en telefoon en voorkeur van ligging.</p>
             </div>
           </div>
         </div>

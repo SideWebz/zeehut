@@ -188,8 +188,8 @@ main > div:first-child > header:first-child {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 40;
-  width: 46px;
-  height: 46px;
+  width: 56px;
+  height: 56px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -287,6 +287,18 @@ main > div:first-child > header:first-child {
   white-space: nowrap;
 }
 
+.site-footer-meta-left,
+.site-footer-meta-right {
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.site-footer-meta-left:hover,
+.site-footer-meta-right:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .site-footer-meta-right {
   grid-area: right;
   justify-self: end;
@@ -370,4 +382,12 @@ main > div:first-child > header:first-child {
   position: relative;
   width: 100%;
   height: clamp(150px, 24vw, 280px);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.standplaats-underlined-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }

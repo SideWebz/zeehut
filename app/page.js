@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../public/logo.svg";
 import Content from "../public/content/page1.json"
 
@@ -37,7 +38,7 @@ export default function Home() {
           <div className="col-md-7 mb-3">
             <h1>Uw strandcabinehouder</h1>
             <p>{Content.texts[0].content}</p>
-            <button className="btn btn-custom">Contacteer ons</button>
+            <Link href="/contact" className="btn btn-custom">Contacteer ons</Link>
           </div>
           <div className="col-md-5">
             <Image 
@@ -61,7 +62,7 @@ export default function Home() {
                  style={{ aspectRatio: '1 / 1' }}>
               <div>
                 <p className="p-large">{Content.texts[1].content}</p>
-                <button className="btn btn-custom mt-3">Onze diensten</button>
+                <Link href="/verhuur" className="btn btn-custom mt-3">Onze diensten</Link>
               </div>
             </div>
           </div>
@@ -98,7 +99,7 @@ export default function Home() {
                  style={{ aspectRatio: '1 / 1' }}>
               <div>
                 <p className="p-large">{Content.texts[2].content}</p>
-                <button className="btn btn-custom mt-3">Onze strandcabines</button>
+                <Link href="/strandcabines" className="btn btn-custom mt-3">Onze strandcabines</Link>
               </div>
             </div>
           </div>

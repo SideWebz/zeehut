@@ -56,7 +56,14 @@ export default function Footer() {
         </div>
 
         <div className="site-footer-meta">
-          <span className="site-footer-meta-left">Content by Blanckmedia.be</span>
+          <a
+            className="site-footer-meta-left"
+            href="https://blanckmedia.be"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Content by Blanckmedia.be
+          </a>
 
           <div className="site-footer-meta-center">
             <Link href="/cookiepolicy">Cookiepolicy</Link>
@@ -64,7 +71,14 @@ export default function Footer() {
             <Link href="/algemene-voorwaarden">Algemene Voorwaarden</Link>
           </div>
 
-          <span className="site-footer-meta-right">Made by Sidewebz.be</span>
+          <a
+            className="site-footer-meta-right"
+            href="https://sidewebz.be"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Made by Sidewebz.be
+          </a>
         </div>
       </div>
     </footer>
