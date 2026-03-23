@@ -3,6 +3,12 @@ import Link from "next/link";
 import logo from "../public/logo.svg";
 import Content from "../public/content/page1.json"
 
+export const metadata = {
+  title: "Home",
+  description:
+    "De Zeehut in Oostende: verhuur van strandcabines met service, onderhoud en ondersteuning voor een ontspannen strandseizoen.",
+};
+
 export default function Home() {
   return (
     <div>

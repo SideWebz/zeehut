@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Privacy Policy",
+  description:
+    "Lees hoe De Zeehut persoonsgegevens verwerkt voor reservaties, aanvragen en dienstverlening volgens GDPR.",
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <section className="container section-block">

@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import dezeehut2 from "../../public/dezeehut2.png";
 
+export const metadata = {
+  title: "Strandcabines",
+  description:
+    "Ontdek de strandcabines van De Zeehut: moderne cabines op maat van de voorschriften van stad Oostende.",
+};
+
 export default function Strandcabines() {
   return (
     <div>

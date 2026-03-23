@@ -2,6 +2,12 @@ import Image from 'next/image';
 import dezeehut2 from "../../public/dezeehut2.png";
 import dezeehutBottom from "../../public/dezeehut-bottom.jpg";
 
+export const metadata = {
+  title: "Standplaatsen",
+  description:
+    "Info over standplaatsen voor strandcabines in Oostende: zones, aanvraagprocedure en start van het seizoen.",
+};
+
 export default function StandplaatsPage() {
   return (
     <div>

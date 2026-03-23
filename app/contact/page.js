@@ -2,6 +2,12 @@ import Image from "next/image";
 import dezeehutBottom from "../../public/dezeehut-bottom.jpg";
 import styles from "./contact.module.css";
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "Contacteer De Zeehut in Oostende voor reservaties, herstellingen en vragen over strandcabines.",
+};
+
 export default function ContactPage() {
   return (
     <section className="section-block-tight container">

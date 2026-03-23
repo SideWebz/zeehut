@@ -4,6 +4,12 @@ import servicesData from "../../public/content/page2.json";
 import iconsData from "../../public/content/icons.json";
 import styles from "./verhuur.module.css";
 
+export const metadata = {
+  title: "Verhuur",
+  description:
+    "Verhuur van strandcabines in Oostende met inbegrepen onderhoud, bijstand en service door De Zeehut.",
+};
+
 const iconMap = Object.fromEntries(iconsData.map((icon) => [icon.key, icon]));
 
 function IconGlyph({ iconKey }) {
