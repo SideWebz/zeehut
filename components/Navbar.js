@@ -24,35 +24,10 @@ export default function Navbar() {
   useEffect(() => {
     const body = document.body;
 
-    const unlockBody = () => {
-      const savedScrollY = Number(body.dataset.menuScrollY || "0");
-
-      body.classList.remove("menu-open");
-      body.style.position = "";
-      body.style.top = "";
-      body.style.left = "";
-      body.style.right = "";
-      body.style.width = "";
-      delete body.dataset.menuScrollY;
-      window.scrollTo(0, savedScrollY);
-    };
-
-    if (isMenuOpen) {
-      const scrollY = window.scrollY;
-
-      body.dataset.menuScrollY = String(scrollY);
-      body.classList.add("menu-open");
-      body.style.position = "fixed";
-      body.style.top = `-${scrollY}px`;
-      body.style.left = "0";
-      body.style.right = "0";
-      body.style.width = "100%";
-    } else {
-      unlockBody();
-    }
+    body.classList.toggle("menu-open", isMenuOpen);
 
     return () => {
-      unlockBody();
+      body.classList.remove("menu-open");
     };
   }, [isMenuOpen]);
 
