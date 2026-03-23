@@ -1,0 +1,91 @@
+.contactHeader {
+  min-height: clamp(140px, 20vw, 230px);
+  background: linear-gradient(135deg, #df540a 0%, #f5a26b 100%);
+  border-radius: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: clamp(1.1rem, 3vw, 2.6rem) 1.2rem;
+}
+
+.contactHeader h1 {
+  margin: 0;
+  line-height: 1.02;
+}
+
+.contactHeader p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.25;
+}
+
+.contactVisualWrap {
+  position: relative;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  min-height: clamp(210px, 30vw, 300px);
+  margin-top: 0.75rem;
+}
+
+.contactVisualImage {
+  object-fit: cover;
+}
+
+.contactInfoPanel {
+  position: absolute;
+  width: min(92%, 980px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 1rem;
+  box-shadow: 0 15px 36px rgba(0, 0, 0, 0.2);
+  padding: clamp(1.2rem, 2.2vw, 1.4rem) clamp(1rem, 2vw, 1.3rem);
+}
+
+.contactInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contactInfoItem {
+  text-align: center;
+}
+
+.contactInfoItem h2 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.3rem, 2.8vw, 1.75rem);
+  color: #2f2f2f;
+}
+
+.contactInfoItem a,
+.contactInfoItem p {
+  margin: 0;
+  color: #4b4b4b;
+  font-size: clamp(0.94rem, 1.55vw, 1.02rem);
+  line-height: 1.45;
+}
+
+.contactInfoItem a:hover {
+  color: var(--secondary);
+}
+
+@media (max-width: 767.98px) {
+  .contactInfoGrid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .contactVisualWrap {
+    min-height: 280px;
+  }
+
+  .contactInfoPanel {
+    width: calc(100% - 1.2rem);
+  }
+}
