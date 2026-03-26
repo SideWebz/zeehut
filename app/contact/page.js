@@ -1,20 +1,20 @@
 import Image from "next/image";
 import dezeehutBottom from "../../public/dezeehut-bottom.jpg";
+import metadataContent from "../../public/content/metadata.json";
 import styles from "./contact.module.css";
 
-export const metadata = {
-  title: "Contact",
-  description:
-    "Contacteer De Zeehut in Oostende voor reservaties, herstellingen en vragen over strandcabines.",
-};
+export const metadata = metadataContent.pages.contact;
 
 export default function ContactPage() {
   return (
-    <section className="section-block-tight container">
-      <div className={styles.contactHeader}>
-        <h1>Contact</h1>
-        <p>Voor reservaties en herstellingen</p>
-        <p>Stuur ons een mail en we helpen je graag verder</p>
+    <section className="section-block-tight">
+      <div
+        className="w-100 rounded-4 bg-light d-flex flex-column align-items-center justify-content-center text-center px-4 py-3 py-md-5"
+        style={{ minHeight: "clamp(120px, 20vw, 220px)" }}
+      >
+        <h1 style={{ fontSize: "clamp(2.1rem, 5.1vw, 3.2rem)", lineHeight: 1.06 }}>Contact</h1>
+        <p className="mb-0" style={{ fontSize: "clamp(0.9rem, 1.45vw, 1.02rem)" }}>Voor reservaties en herstellingen</p>
+        <p className="mb-0" style={{ fontSize: "clamp(0.9rem, 1.45vw, 1.02rem)" }}>Stuur ons een mail en we helpen je graag verder</p>
       </div>
 
       <div className={styles.contactVisualWrap}>

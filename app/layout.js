@@ -3,14 +3,31 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Script from "next/script"; // <-- voeg dit toe
+import metadataContent from "../public/content/metadata.json";
 
 export const metadata = {
+  metadataBase: new URL("https://dezeehut.sidewebz.be"),
   title: {
-    default: "De Zeehut | Strandcabines in Oostende",
-    template: "%s | De Zeehut",
+    default: metadataContent.site.defaultTitle,
+    template: metadataContent.site.titleTemplate,
   },
-  description:
-    "De Zeehut verhuurt strandcabines in Oostende en helpt met plaatsing, onderhoud en herstellingen voor een zorgeloos strandseizoen.",
+  description: metadataContent.site.defaultDescription,
+  openGraph: {
+    type: "website",
+    siteName: "De Zeehut",
+    images: [
+      {
+        url: metadataContent.site.shareCardImage.url,
+        width: metadataContent.site.shareCardImage.width,
+        height: metadataContent.site.shareCardImage.height,
+        alt: metadataContent.site.shareCardImage.alt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [metadataContent.site.shareCardImage.url],
+  },
 };
 
 export default function RootLayout({ children }) {

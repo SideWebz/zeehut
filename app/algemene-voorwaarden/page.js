@@ -1,8 +1,6 @@
-export const metadata = {
-  title: "Algemene Voorwaarden",
-  description:
-    "Lees de algemene voorwaarden van De Zeehut voor reservaties, verhuur, herstellingen en praktische afspraken.",
-};
+import metadataContent from "../../public/content/metadata.json";
+
+export const metadata = metadataContent.pages.algemeneVoorwaarden;
 
 export default function AlgemeneVoorwaardenPage() {
   return (

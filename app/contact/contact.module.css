@@ -1,28 +1,3 @@
-.contactHeader {
-  min-height: clamp(140px, 20vw, 230px);
-  background: linear-gradient(135deg, #df540a 0%, #f5a26b 100%);
-  border-radius: 1.2rem;
-  color: #ffffff;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.65rem;
-  padding: clamp(1.1rem, 3vw, 2.6rem) 1.2rem;
-}
-
-.contactHeader h1 {
-  margin: 0;
-  line-height: 1.02;
-}
-
-.contactHeader p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.95);
-  line-height: 1.25;
-}
-
 .contactVisualWrap {
   position: relative;
   border-radius: 1.2rem;

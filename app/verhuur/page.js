@@ -2,13 +2,10 @@ import Image from "next/image";
 import dezeehut2 from "../../public/dezeehut2.png";
 import servicesData from "../../public/content/page2.json";
 import iconsData from "../../public/content/icons.json";
+import metadataContent from "../../public/content/metadata.json";
 import styles from "./verhuur.module.css";
 
-export const metadata = {
-  title: "Verhuur",
-  description:
-    "Verhuur van strandcabines in Oostende met inbegrepen onderhoud, bijstand en service door De Zeehut.",
-};
+export const metadata = metadataContent.pages.verhuur;
 
 const iconMap = Object.fromEntries(iconsData.map((icon) => [icon.key, icon]));
 
@@ -97,11 +94,11 @@ export default function Verhuur() {
       {/* HEADER */}
       <section className="section-block-tight">
         <div
-          className="w-100 rounded-4 text-white d-flex flex-column align-items-center justify-content-center text-center px-4 py-3 py-md-5"
-          style={{ minHeight: 'clamp(120px, 20vw, 220px)', background: 'linear-gradient(135deg, #DF540A 0%, #f5a26b 100%)' }}
+          className="w-100 rounded-4 bg-light d-flex flex-column align-items-center justify-content-center text-center px-4 py-3 py-md-5"
+          style={{ minHeight: 'clamp(120px, 20vw, 220px)' }}
         >
-          <h1>Verhuur Strandcabines</h1>
-          <p className="mb-0">De sleutel voor een zorgeloos strandseizoen</p>
+          <h1 style={{ fontSize: 'clamp(2.1rem, 5.1vw, 3.2rem)', lineHeight: 1.06 }}>Verhuur Strandcabines</h1>
+          <p className="mb-0" style={{ fontSize: 'clamp(0.9rem, 1.45vw, 1.02rem)' }}>De sleutel voor een zorgeloos strandseizoen</p>
         </div>
         <div className="d-flex gap-2 mt-2" style={{ height: 'clamp(120px, 20vw, 220px)' }}>
           <div className="position-relative overflow-hidden rounded-4" style={{ flex: 1 }}>

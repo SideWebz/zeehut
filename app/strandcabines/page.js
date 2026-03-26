@@ -1,12 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import dezeehut2 from "../../public/dezeehut2.png";
+import metadataContent from "../../public/content/metadata.json";
 
-export const metadata = {
-  title: "Strandcabines",
-  description:
-    "Ontdek de strandcabines van De Zeehut: moderne cabines op maat van de voorschriften van stad Oostende.",
-};
+export const metadata = metadataContent.pages.strandcabines;
 
 export default function Strandcabines() {
   return (
@@ -97,7 +94,7 @@ export default function Strandcabines() {
           {/* Sectie 3 Tekstblok */}
           <div className="col-md-6">
             <div className="d-flex align-items-center justify-content-center">
-              <div>
+              <div className="ps-md-4 ps-lg-5">
                 <h1>Ons design</h1>
                 <p>Onze strandcabines zijn uitgerust met tafel en legplanken, een kapstok met verschillende haken en borstelklem. Op aanvraag kan een spiegel en/of gordijnroede worden voorzien.</p>
                 <a href="#strandcabines-fotos" className="btn btn-custom mt-3 d-none d-lg-inline-block">Bekijk foto's</a>

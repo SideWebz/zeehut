@@ -1,8 +1,6 @@
-export const metadata = {
-  title: "Cookiepolicy",
-  description:
-    "Bekijk hoe De Zeehut omgaat met cookies en welke technisch noodzakelijke cookies op deze website gebruikt worden.",
-};
+import metadataContent from "../../public/content/metadata.json";
+
+export const metadata = metadataContent.pages.cookiePolicy;
 
 export default function CookiePolicyPage() {
   return (

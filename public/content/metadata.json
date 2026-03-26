@@ -1,0 +1,47 @@
+{
+  "site": {
+    "defaultTitle": "De Zeehut | Strandcabines in Oostende",
+    "titleTemplate": "%s | De Zeehut",
+    "defaultDescription": "De Zeehut verhuurt strandcabines in Oostende en helpt met plaatsing, onderhoud en herstellingen voor een zorgeloos strandseizoen.",
+    "shareCardImage": {
+      "url": "/og/share-card.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "De Zeehut strandcabines"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Home",
+      "description": "De Zeehut in Oostende: verhuur van strandcabines met service, onderhoud en ondersteuning voor een ontspannen strandseizoen."
+    },
+    "strandcabines": {
+      "title": "Strandcabines",
+      "description": "Ontdek de strandcabines van De Zeehut: moderne cabines op maat van de voorschriften van stad Oostende."
+    },
+    "verhuur": {
+      "title": "Verhuur",
+      "description": "Verhuur van strandcabines in Oostende met inbegrepen onderhoud, bijstand en service door De Zeehut."
+    },
+    "standplaats": {
+      "title": "Standplaatsen",
+      "description": "Info over standplaatsen voor strandcabines in Oostende: zones, aanvraagprocedure en start van het seizoen."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contacteer De Zeehut in Oostende voor reservaties, herstellingen en vragen over strandcabines."
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "description": "Lees hoe De Zeehut persoonsgegevens verwerkt voor reservaties, aanvragen en dienstverlening volgens GDPR."
+    },
+    "cookiePolicy": {
+      "title": "Cookiepolicy",
+      "description": "Bekijk hoe De Zeehut omgaat met cookies en welke technisch noodzakelijke cookies op deze website gebruikt worden."
+    },
+    "algemeneVoorwaarden": {
+      "title": "Algemene Voorwaarden",
+      "description": "Lees de algemene voorwaarden van De Zeehut voor reservaties, verhuur, herstellingen en praktische afspraken."
+    }
+  }
+}

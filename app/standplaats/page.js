@@ -1,12 +1,9 @@
 import Image from 'next/image';
 import dezeehut2 from "../../public/dezeehut2.png";
 import dezeehutBottom from "../../public/dezeehut-bottom.jpg";
+import metadataContent from "../../public/content/metadata.json";
 
-export const metadata = {
-  title: "Standplaatsen",
-  description:
-    "Info over standplaatsen voor strandcabines in Oostende: zones, aanvraagprocedure en start van het seizoen.",
-};
+export const metadata = metadataContent.pages.standplaats;
 
 export default function StandplaatsPage() {
   return (
@@ -14,11 +11,11 @@ export default function StandplaatsPage() {
        {/* HEADER */}
       <section className="section-block-tight">
         <div
-          className="w-100 rounded-4 text-white d-flex flex-column align-items-center justify-content-center text-center px-4 py-3 py-md-5"
-          style={{ minHeight: 'clamp(120px, 20vw, 220px)', background: 'linear-gradient(135deg, #DF540A 0%, #f5a26b 100%)' }}
+          className="w-100 rounded-4 bg-light d-flex flex-column align-items-center justify-content-center text-center px-4 py-3 py-md-5"
+          style={{ minHeight: 'clamp(120px, 20vw, 220px)' }}
         >
-          <h1>Standplaatsen</h1>
-          <p className="mb-0">Jouw plekje op het strand.</p>
+          <h1 style={{ fontSize: 'clamp(2.1rem, 5.1vw, 3.2rem)', lineHeight: 1.06 }}>Standplaatsen</h1>
+          <p className="mb-0" style={{ fontSize: 'clamp(0.9rem, 1.45vw, 1.02rem)' }}>Jouw plekje op het strand.</p>
         </div>
         <div className="d-flex gap-2 mt-2" style={{ height: 'clamp(120px, 20vw, 220px)' }}>
           <div className="position-relative overflow-hidden rounded-4" style={{ flex: 1 }}>
