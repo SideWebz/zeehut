@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -18,10 +19,6 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
     const body = document.body;
 
     body.classList.toggle("menu-open", isMenuOpen);
@@ -34,8 +31,8 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={`${styles.navInner} container`}>
-        <Link className={styles.brand} href="/" aria-label="Ga naar home">
-          <img src="/favicon.ico" alt="Logo" className={styles.logo} />
+        <Link className={styles.brand} href="/" aria-label="Ga naar home" onClick={() => setIsMenuOpen(false)}>
+          <Image src="/favicon.ico" alt="Logo" className={styles.logo} width={38} height={38} />
         </Link>
 
         <button
@@ -59,6 +56,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`${styles.navLink} ${isActive ? styles.active : ""}`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
               </Link>

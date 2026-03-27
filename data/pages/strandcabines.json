@@ -1,0 +1,88 @@
+{
+  "paragraphs": {
+    "intro": "Beschik je over een standplaats op het strand, we hebben hiervoor strandcabines ter beschikking. Deze voldoen aan de afmetingen opgelegd door stad Oostende!",
+    "design": "Onze strandcabines zijn uitgerust met tafel en legplanken, een kapstok met verschillende haken en borstelklem. Op aanvraag kan een spiegel en/of gordijnroede worden voorzien."
+  },
+  "media": {
+    "video": "https://blanckmedia-videos.b-cdn.net/DEZEEHUT/Nieuwe%20strandcabines.mp4",
+    "collageTop": [
+      {
+        "path": "/dezeehute4.jpg",
+        "alt": "DeZeeHut 2",
+        "description": "Collage links boven"
+      },
+      {
+        "path": "/dezeehut5.jpg",
+        "alt": "DeZeeHut 2",
+        "description": "Collage links onder"
+      },
+      {
+        "path": "/dezeehut10.jpg",
+        "alt": "DeZeeHut 2",
+        "description": "Collage midden boven"
+      },
+      {
+        "path": "/dezeehut9.jpg",
+        "alt": "DeZeeHut 2",
+        "description": "Collage midden"
+      },
+      {
+        "path": "/dezeehut7.jpg",
+        "alt": "DeZeeHut 2",
+        "description": "Collage midden onder"
+      },
+      {
+        "path": "/dezeehut8.jpg",
+        "alt": "DeZeeHut 2",
+        "description": "Collage rechts boven"
+      },
+      {
+        "path": "/dezeehut6.jpg",
+        "alt": "DeZeeHut 2",
+        "description": "Collage rechts onder"
+      },
+      {
+        "path": "/dezeehut11.jpg",
+        "alt": "Foto DeZeeHut",
+        "description": "Sectie afbeelding"
+      }
+    ],
+    "collageBottom": [
+      {
+        "path": "/dezeehut12.jpg",
+        "alt": "DeZeeHut collage links boven",
+        "description": "Collage breed links boven"
+      },
+      {
+        "path": "/dezeehut19.jpg",
+        "alt": "DeZeeHut collage links onder",
+        "description": "Collage breed links onder"
+      },
+      {
+        "path": "/dezeehut14.jpg",
+        "alt": "DeZeeHut collage midden boven",
+        "description": "Collage breed midden boven"
+      },
+      {
+        "path": "/dezeehut15.jpg",
+        "alt": "DeZeeHut collage midden midden",
+        "description": "Collage breed midden"
+      },
+      {
+        "path": "/dezeehut16.jpg",
+        "alt": "DeZeeHut collage midden onder",
+        "description": "Collage breed midden onder"
+      },
+      {
+        "path": "/dezeehut17.jpg",
+        "alt": "DeZeeHut collage rechts boven",
+        "description": "Collage breed rechts boven"
+      },
+      {
+        "path": "/dezeehut18.jpg",
+        "alt": "DeZeeHut collage rechts onder",
+        "description": "Collage breed rechts onder"
+      }
+    ]
+  }
+}

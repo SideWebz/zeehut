@@ -2,8 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Script from "next/script"; // <-- voeg dit toe
-import metadataContent from "../public/content/metadata.json";
+import Script from "next/script";
+import metadataContent from "../data/site/metadata.json";
 
 export const metadata = {
   metadataBase: new URL("https://dezeehut.sidewebz.be"),
@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl" data-scroll-behavior="smooth">
       <body>
-        {/* Umami Tracking Script */}
         <Script
           strategy="afterInteractive"
           src="https://analytics.sidewebz.be/script.js"

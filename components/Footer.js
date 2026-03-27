@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -16,13 +17,13 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <Link href="/" className="site-footer-favicon-link" aria-label="Ga naar home">
-        <img src="/favicon.ico" alt="Home" className="site-footer-favicon" />
+        <Image src="/favicon.ico" alt="Home" className="site-footer-favicon" width={56} height={56} />
       </Link>
 
       <div className="container site-footer-inner">
         <div className="row g-4 align-items-start align-items-md-center">
           <div className="col-12 order-1 site-footer-col-center col-md-4 order-md-2">
-            <img src="/logo.svg" alt="De Zeehut logo" className="site-footer-logo" />
+            <Image src="/logo.svg" alt="De Zeehut logo" className="site-footer-logo" width={170} height={60} />
           </div>
 
           <div className="col-6 order-2 col-md-4 order-md-1">

@@ -1,4 +1,5 @@
-import metadataContent from "../../public/content/metadata.json";
+import metadataContent from "../../data/site/metadata.json";
+import termsData from "../../data/pages/algemene-voorwaarden.json";
 
 export const metadata = metadataContent.pages.algemeneVoorwaarden;
 
@@ -7,36 +8,32 @@ export default function AlgemeneVoorwaardenPage() {
     <section className="container section-block">
       <h1>Algemene Voorwaarden</h1>
       <p>
-        Deze voorwaarden zijn van toepassing op reservaties, verhuur en herstellingen via De Zeehut.
+        {termsData.paragraphs.intro}
       </p>
 
       <h2>Reservaties en aanvragen</h2>
       <p>
-        Een aanvraag via e-mail of telefoon geldt als contactaanvraag en is pas definitief na
-        bevestiging door De Zeehut.
+        {termsData.paragraphs.reservations}
       </p>
 
       <h2>Prijzen en afspraken</h2>
       <p>
-        Prijzen en praktische afspraken worden vooraf gecommuniceerd. Eventuele wijzigingen worden
-        tijdig meegedeeld.
+        {termsData.paragraphs.pricing}
       </p>
 
       <h2>Aansprakelijkheid</h2>
       <p>
-        De Zeehut doet het nodige om correcte informatie te tonen op de website, maar kan niet
-        aansprakelijk gesteld worden voor onbedoelde fouten of tijdelijke onbeschikbaarheid.
+        {termsData.paragraphs.liability}
       </p>
 
       <h2>Privacy</h2>
       <p>
-        Persoonsgegevens worden verwerkt volgens de geldende GDPR-wetgeving. Zie ook onze
-        privacy policy.
+        {termsData.paragraphs.privacy}
       </p>
 
       <h2>Contact</h2>
       <p>
-        Voor vragen over deze voorwaarden kan je ons bereiken via
+        {termsData.paragraphs.contactPrefix}
         {' '}<a href="mailto:michel@dezeehut.be">michel@dezeehut.be</a> of
         {' '}<a href="tel:+32475888999">+32 475 88 89 99</a>.
       </p>

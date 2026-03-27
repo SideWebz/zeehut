@@ -1,0 +1,34 @@
+{
+  "paragraphs": {
+    "headerLine": "Jouw plekje op het strand.",
+    "intro": "Afhankelijk in welke zone je een cabine wil huren kan je een standplaats bij het stad of bij ons aanvragen.",
+    "allZonesPrefix": "Voor alle zones 1 tem 6 kan u een standplaats huren bij het stad, inschrijven kan via",
+    "allZonesLinkText": "www.oostende.be/strandcabines",
+    "allZonesSuffix": ". Dit kan jaarlijks vanaf 1 oktober tot en met 31 december. Eens u een plaats is toegekend kunt u zich tot ons wenden voor de huur van een strandcabine.",
+    "zone4Prefix": "Voor zone 4 in Mariakerke kunt u eveneens, indien er een plaats vrij komt, bij ons een standplaats huren. Stuur een mail naar",
+    "zone4LinkText": "michel@dezeehut.be",
+    "zone4Suffix": "met uw adres en telefoon en voorkeur van ligging.",
+    "season": "Het strandseizoen nadert van zodra het strand “genivelleerd” is door het stad. Vanaf dan kan gestart worden met het plaatsen van de cabines. Dit is meestal in de tweede helft van maart."
+  },
+  "media": {
+    "headerImages": [
+      {
+        "path": "/dezeehut20.jpg",
+        "alt": "Standplaats 1",
+        "description": "Header afbeelding links"
+      },
+      {
+        "path": "/dezeehut21.jpg",
+        "alt": "Standplaats 2",
+        "description": "Header afbeelding rechts"
+      }
+    ],
+    "images": [
+      {
+        "path": "/dezeehut-bottom.jpg",
+        "alt": "Standplaats footer",
+        "description": "Footer achtergrond"
+      }
+    ]
+  }
+}

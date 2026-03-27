@@ -1,6 +1,6 @@
 import Image from "next/image";
-import dezeehutBottom from "../../public/dezeehut-bottom.jpg";
-import metadataContent from "../../public/content/metadata.json";
+import metadataContent from "../../data/site/metadata.json";
+import contactData from "../../data/pages/contact.json";
 import styles from "./contact.module.css";
 
 export const metadata = metadataContent.pages.contact;
@@ -13,14 +13,14 @@ export default function ContactPage() {
         style={{ minHeight: "clamp(120px, 20vw, 220px)" }}
       >
         <h1 style={{ fontSize: "clamp(2.1rem, 5.1vw, 3.2rem)", lineHeight: 1.06 }}>Contact</h1>
-        <p className="mb-0" style={{ fontSize: "clamp(0.9rem, 1.45vw, 1.02rem)" }}>Voor reservaties en herstellingen</p>
-        <p className="mb-0" style={{ fontSize: "clamp(0.9rem, 1.45vw, 1.02rem)" }}>Stuur ons een mail en we helpen je graag verder</p>
+        <p className="mb-0" style={{ fontSize: "clamp(0.9rem, 1.45vw, 1.02rem)" }}>{contactData.paragraphs.headerLine1}</p>
+        <p className="mb-0" style={{ fontSize: "clamp(0.9rem, 1.45vw, 1.02rem)" }}>{contactData.paragraphs.headerLine2}</p>
       </div>
 
       <div className={styles.contactVisualWrap}>
         <Image
-          src={dezeehutBottom}
-          alt="De Zeehut contact"
+          src={contactData.media.images[0].path}
+          alt={contactData.media.images[0].alt}
           fill
           priority
           sizes="100vw"
@@ -41,7 +41,7 @@ export default function ContactPage() {
 
             <div className={styles.contactInfoItem}>
               <h2>Locatie</h2>
-              <p>Oostende</p>
+              <p>{contactData.paragraphs.location}</p>
             </div>
           </div>
         </div>

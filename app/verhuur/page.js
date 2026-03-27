@@ -1,8 +1,7 @@
 import Image from "next/image";
-import dezeehut2 from "../../public/dezeehut2.png";
-import servicesData from "../../public/content/page2.json";
-import iconsData from "../../public/content/icons.json";
-import metadataContent from "../../public/content/metadata.json";
+import verhuurData from "../../data/pages/verhuur.json";
+import iconsData from "../../data/shared/icons.json";
+import metadataContent from "../../data/site/metadata.json";
 import styles from "./verhuur.module.css";
 
 export const metadata = metadataContent.pages.verhuur;
@@ -91,36 +90,34 @@ function ServiceCard({ title, description, icon }) {
 export default function Verhuur() {
   return (
     <div>
-      {/* HEADER */}
       <section className="section-block-tight">
         <div
           className="w-100 rounded-4 bg-light d-flex flex-column align-items-center justify-content-center text-center px-4 py-3 py-md-5"
           style={{ minHeight: 'clamp(120px, 20vw, 220px)' }}
         >
           <h1 style={{ fontSize: 'clamp(2.1rem, 5.1vw, 3.2rem)', lineHeight: 1.06 }}>Verhuur Strandcabines</h1>
-          <p className="mb-0" style={{ fontSize: 'clamp(0.9rem, 1.45vw, 1.02rem)' }}>De sleutel voor een zorgeloos strandseizoen</p>
+          <p className="mb-0" style={{ fontSize: 'clamp(0.9rem, 1.45vw, 1.02rem)' }}>{verhuurData.paragraphs.headerLine}</p>
         </div>
         <div className="d-flex gap-2 mt-2" style={{ height: 'clamp(120px, 20vw, 220px)' }}>
           <div className="position-relative overflow-hidden rounded-4" style={{ flex: 1 }}>
-            <Image src="/dezeehut21.jpg" fill style={{ objectFit: 'cover' }} sizes="50vw" priority loading="eager" alt="Verhuur 1" />
+            <Image src={verhuurData.media.headerImages[0].path} fill style={{ objectFit: 'cover' }} sizes="50vw" priority loading="eager" alt={verhuurData.media.headerImages[0].alt} />
           </div>
           <div className="position-relative overflow-hidden rounded-4" style={{ flex: 1 }}>
-            <Image src="/dezeehut20.jpg" fill style={{ objectFit: 'cover' }} sizes="50vw" loading="eager" alt="Verhuur 2" />
+            <Image src={verhuurData.media.headerImages[1].path} fill style={{ objectFit: 'cover' }} sizes="50vw" loading="eager" alt={verhuurData.media.headerImages[1].alt} />
           </div>
         </div>
       </section>
 
-      {/* SECTIE 2 */}
       <section className="container section-block">
         <div className="row justify-content-center text-center mb-4">
           <div className="col-lg-8">
             <h1>Onze diensten</h1>
-            <p>Geen zorgen van onderhoud cabine en bijstand op het strand, alles is inbegrepen in de huurprijs van de cabine.</p>
+            <p>{verhuurData.paragraphs.servicesIntro}</p>
           </div>
         </div>
 
         <div className={styles.servicesGrid}>
-          {servicesData.map((service) => (
+          {verhuurData.services.map((service) => (
             <ServiceCard
               key={service.id}
               title={service.title}

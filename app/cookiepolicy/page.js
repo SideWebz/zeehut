@@ -1,4 +1,5 @@
-import metadataContent from "../../public/content/metadata.json";
+import metadataContent from "../../data/site/metadata.json";
+import cookiePolicyData from "../../data/pages/cookiepolicy.json";
 
 export const metadata = metadataContent.pages.cookiePolicy;
 
@@ -7,28 +8,27 @@ export default function CookiePolicyPage() {
     <section className="container section-block">
       <h1>Cookiepolicy</h1>
       <p>
-        Deze website gebruikt geen onnodige of commerciële trackingcookies.
+        {cookiePolicyData.paragraphs.intro}
       </p>
 
       <h2>Essentiële cookies</h2>
       <p>
-        Enkel technisch noodzakelijke cookies kunnen gebruikt worden om de website correct te laten
-        werken (bijvoorbeeld basisfunctionaliteit of beveiliging).
+        {cookiePolicyData.paragraphs.essential}
       </p>
 
       <h2>Geen marketingcookies</h2>
       <p>
-        We gebruiken geen cookies voor advertentiedoeleinden, profielopbouw of externe tracking.
+        {cookiePolicyData.paragraphs.marketing}
       </p>
 
       <h2>Cookiebeheer</h2>
       <p>
-        Je kan cookies altijd beheren of verwijderen via de instellingen van je browser.
+        {cookiePolicyData.paragraphs.management}
       </p>
 
       <h2>Vragen</h2>
       <p>
-        Voor vragen over cookies kan je contact opnemen via
+        {cookiePolicyData.paragraphs.questionsPrefix}
         {' '}<a href="mailto:michel@dezeehut.be">michel@dezeehut.be</a>.
       </p>
     </section>
